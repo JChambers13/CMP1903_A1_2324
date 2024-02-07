@@ -20,18 +20,9 @@ namespace CMP1903_A1_2324
         {
             get { return _dieValue; }
             set { _dieValue = value; }
-<<<<<<< Updated upstream
             //Method
-=======
-        }
-        //Method
-
-        public void rollDice()
-        {
-            Random rnd = new Random((int)DateTime.Now.Ticks);
-            _dieValue = rnd.Next(1, 6);
->>>>>>> Stashed changes
         }
 
+        
     }
 }
