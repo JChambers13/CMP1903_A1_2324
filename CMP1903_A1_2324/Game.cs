@@ -16,9 +16,15 @@ namespace CMP1903_A1_2324
          */
 
         //Methods
-        Die die1 = new Die();
-        Die die2 = new Die();
-        Die die3 = new Die();
+
+        void diceRolling()
+        {
+            Die die1 = new Die();
+            Die die2 = new Die();
+            Die die3 = new Die();
+            int sum;
+        }
+        
 
     }
 }

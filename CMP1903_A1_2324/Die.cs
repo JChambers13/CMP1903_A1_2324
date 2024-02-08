@@ -23,6 +23,12 @@ namespace CMP1903_A1_2324
             //Method
         }
 
-        
+        public void rollDice()
+        {
+            Random rnd = new Random((int)DateTime.Now.Ticks);
+            _dieValue = rnd.Next(1, 6);
+
+        }
+
     }
 }
