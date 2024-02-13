@@ -16,13 +16,19 @@ namespace CMP1903_A1_2324
          */
 
         //Methods
+        Die die1 = new Die();
+        Die die2 = new Die();
+        Die die3 = new Die();
+        int sum;
 
-        void diceRolling()
+        public void diceRolling()
         {
-            Die die1 = new Die();
-            Die die2 = new Die();
-            Die die3 = new Die();
-            int sum;
+            die1.rollDice();
+            die2.rollDice();
+            die3.rollDice();
+            sum = die1.dieValue + die2.dieValue + die3.dieValue;
+            Console.WriteLine(sum + " D1: " + die1.dieValue + " D2: " + die2.dieValue + " D3: " + die3.dieValue);
+            Console.ReadKey();
         }
         
 
