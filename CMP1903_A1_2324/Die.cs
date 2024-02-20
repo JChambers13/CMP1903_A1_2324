@@ -26,8 +26,8 @@ namespace CMP1903_A1_2324
         public int rollDice()
         {
             Random rnd = new Random((int)DateTime.Now.Ticks);
-            _dieValue = rnd.Next(1, 7);
-            return _dieValue;
+            dieValue = rnd.Next(1, 7);
+            return dieValue;
         }
 
     }
