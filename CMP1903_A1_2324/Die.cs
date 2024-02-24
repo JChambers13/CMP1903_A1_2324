@@ -27,6 +27,7 @@ namespace CMP1903_A1_2324
         {
             Random rnd = new Random((int)DateTime.Now.Ticks);
             dieValue = rnd.Next(1, 7);
+            Console.WriteLine(_dieValue);
             return dieValue;
         }
 

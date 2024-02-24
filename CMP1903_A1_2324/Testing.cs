@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace CMP1903_A1_2324
 {
     internal class Testing
@@ -17,11 +18,20 @@ namespace CMP1903_A1_2324
          */
 
         //Method
+        
+
 
         Game testGame = new Game();
-
-
+        int tRoll;
+        int tGame;
         Die testDie = new Die();
-        //Debug.Assert(1 == 2, "Buh");
+        public void tests()
+        {
+            tRoll = testDie.rollDice();
+            Debug.Assert((0 < tRoll) && (tRoll < 7), "Dice roll too big");
+            tGame = testGame.diceRolling();
+            Debug.Assert((2 < tGame) && (tGame < 19), "Sum out of bounds");
+
+        }
     }
 }

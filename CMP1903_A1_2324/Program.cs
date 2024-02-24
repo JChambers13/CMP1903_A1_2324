@@ -19,7 +19,7 @@ namespace CMP1903_A1_2324
             
             Game game1 = new Game();
             Testing testObject = new Testing();
-            
+            testObject.tests();
             int sum = game1.diceRolling();
             Console.WriteLine(sum);
             Console.ReadKey();
