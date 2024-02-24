@@ -23,6 +23,7 @@ namespace CMP1903_A1_2324
             int sum = game1.diceRolling();
             Console.WriteLine(sum);
             Console.ReadKey();
+            
         }
     }
 }

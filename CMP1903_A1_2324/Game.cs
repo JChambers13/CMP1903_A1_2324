@@ -16,9 +16,9 @@ namespace CMP1903_A1_2324
          */
 
         //Methods
-        public Die _die1 = new Die();
-        public Die _die2 = new Die();
-        public Die _die3 = new Die();
+        private Die _die1 = new Die();
+        private Die _die2 = new Die();
+        private Die _die3 = new Die();
         
 
         public int diceRolling()
@@ -30,6 +30,7 @@ namespace CMP1903_A1_2324
             
         }
         
+
 
     }
 }
