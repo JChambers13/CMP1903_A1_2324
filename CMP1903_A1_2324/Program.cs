@@ -12,17 +12,34 @@ namespace CMP1903_A1_2324
     {
         static void Main(string[] args)
         {
-            /*
-             * Create a Game object and call its methods.
-             * Create a Testing object to verify the output and operation of the other classes.
-             */
-            
             Game game1 = new Game();
             Testing testObject = new Testing();
-            testObject.tests();
-            int sum = game1.diceRolling();
-            Console.WriteLine(sum);
+            string userChoice;
+            bool rollAgain = true;
+            while (rollAgain)
+            {
+                testObject.tests();
+                int sum = game1.diceRolling();
+                Console.WriteLine("The sum of the dice rolls is: " + sum);
+                
+                Console.WriteLine("Would you like to stop rolling dice? Enter \"n\" to stop. Enter anything else to continue: ");
+                userChoice = Console.ReadLine();
+                if (userChoice == "n")
+                {
+                    rollAgain = false;
+                }
+                else
+                {
+                    Console.WriteLine("Dice will be rolled again.");
+                    //Console.ReadLine();
+                }
+
+
+            }
+
+            Console.WriteLine("No more dice rolling. Enter anything to close the program!");
             Console.ReadKey();
+            
             
         }
     }
