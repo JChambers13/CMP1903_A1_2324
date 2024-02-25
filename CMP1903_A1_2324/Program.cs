@@ -22,7 +22,7 @@ namespace CMP1903_A1_2324
                 int sum = game1.diceRolling();
                 Console.WriteLine("The sum of the dice rolls is: " + sum);
                 
-                Console.WriteLine("Would you like to stop rolling dice? Enter \"n\" to stop. Enter anything else to continue: ");
+                Console.WriteLine("Would you like to stop rolling dice? Enter \"n\" to stop. Hit any other key to continue: ");
                 userChoice = Console.ReadLine();
                 if (userChoice == "n")
                 {
