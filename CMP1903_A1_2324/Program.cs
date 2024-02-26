@@ -16,11 +16,12 @@ namespace CMP1903_A1_2324
             Testing testObject = new Testing();
             string userChoice;
             bool rollAgain = true;
+            testObject.tests();
             while (rollAgain)
             {
-                testObject.tests();
-                int sum = game1.diceRolling();
+                int sum = game1.rollAndSum();
                 Console.WriteLine("The sum of the dice rolls is: " + sum);
+                
                 
                 Console.WriteLine("Would you like to stop rolling dice? Enter \"n\" to stop. Hit any other key to continue: ");
                 userChoice = Console.ReadLine();

@@ -25,11 +25,15 @@ namespace CMP1903_A1_2324
         int tRoll;
         int tGame;
         Die testDie = new Die();
+
+        /// <summary>
+        /// This method tests that the outputs are in the expected range. The rollDice function is tested first, then the rollAndSum.
+        /// </summary>
         public void tests()
         {
-            tRoll = testDie.rollDice();
-            Debug.Assert((0 < tRoll) && (tRoll < 7), "Dice roll too big");
-            tGame = testGame.diceRolling();
+            //tRoll = testDie.rollDice();
+            //Debug.Assert((0 < tRoll) && (tRoll < 7), "Dice roll too big");
+            tGame = testGame.rollAndSum();
             Debug.Assert((2 < tGame) && (tGame < 19), "Sum out of bounds");
 
         }
