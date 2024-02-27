@@ -20,7 +20,7 @@ namespace CMP1903_A1_2324
         {
             get { return _dieValue; }
             set { _dieValue = value; }
-            //Method
+            
         }
 
         static Random rnd = new Random((int)DateTime.Now.Ticks);
