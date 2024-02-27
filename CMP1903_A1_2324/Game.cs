@@ -32,6 +32,7 @@ namespace CMP1903_A1_2324
         public int rollAndSum()
         {
             
+            
             _die1.dieValue = _die1.rollDice();
             _die2.dieValue = _die2.rollDice();
             _die3.dieValue = _die3.rollDice();

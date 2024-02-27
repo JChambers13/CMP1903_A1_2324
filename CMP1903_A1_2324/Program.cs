@@ -12,24 +12,25 @@ namespace CMP1903_A1_2324
     {
         static void Main(string[] args)
         {
+
+            //These lines create objects of the test and game classes.
             Game game1 = new Game();
             Testing testObject = new Testing();
-            string userChoice;
-            bool rollAgain = true;
-            testObject.tests();
+            string userChoice; //userChoice is a variable used to decide whether the user will roll die again. 
+            bool rollAgain = true; //At the start, this variable is true to start the while loop. This can be made false after the first rolling.
+            testObject.tests(); //The tests method is called which tests that the output is as expected.
+            //This while loop is used so the user can roll the dice as many times as they like.
             while (rollAgain)
             {
-                int sum = game1.rollAndSum();
-                Console.WriteLine("The sum of the dice rolls is: " + sum);
-                
-                
-                Console.WriteLine("Would you like to stop rolling dice? Enter \"n\" to stop. Hit any other key to continue: ");
+                int sum = game1.rollAndSum(); //Calls the rollAndSum function to roll the three die and sum the rolls.
+                Console.WriteLine("The sum of the dice rolls is: " + sum); //Outputs the sum
+                Console.WriteLine("Would you like to stop rolling dice? Enter \"n\" to stop. Hit any other key to continue: "); //Asks user if they want to stop rolling dice
                 userChoice = Console.ReadLine();
-                if (userChoice == "n")
+                if (userChoice == "n") //If user types "n", the loop ends.
                 {
                     rollAgain = false;
                 }
-                else
+                else //If user types anything else, dice is rolled again.
                 {
                     Console.WriteLine("Dice will be rolled again.");
                     //Console.ReadLine();
