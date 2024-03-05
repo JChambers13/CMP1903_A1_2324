@@ -34,12 +34,12 @@ namespace CMP1903_A1_2324
         {
             
             _dieValue = rolling(rnd);
-            Console.WriteLine("Vallue of this die is: " +  dieValue);
+            Console.WriteLine("Value of this die is: " +  dieValue);
             
             return _dieValue;
         }
         /// <summary>
-        /// This method is called by the rollDice method. This method rolls the dice giving it a random integer value between 1 and 6. b
+        /// This method is called by the rollDice method. This method rolls the dice giving it a random integer value between 1 and 6.
         /// </summary>
         /// <param name="rnd"></param>
         /// <returns>the rolled die value to the rollDice function</returns>
