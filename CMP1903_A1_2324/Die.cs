@@ -4,38 +4,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CMP1903_A1_2324
-{
-    internal class Die
-    {
-        /*
-         * The Die class should contain one property to hold the current die value,
-         * and one method that rolls the die, returns and integer and takes no parameters.
-         */
-
-        //Property
-        private int _dieValue;
-        
-        public int dieValue
-        {
-            get { return _dieValue; }
-            set { _dieValue = value; }
-            
-        }
-
-        static Random rnd = new Random((int)DateTime.Now.Ticks);
+namespace CMP1903_A1_2324 { 
+    internal class Die { 
+        //These lines create the current value of the die. The die value is private but can be accessed using the Get/Set.
+        private int _dieValue;    
+        public int dieValue {  get { return _dieValue; } set { _dieValue = value; } }        
+        static Random rnd = new Random((int)DateTime.Now.Ticks); //This line creates the random that is used for the die rolling.
         /// <summary>
         /// This method can be accessed by other classes.
         /// It calls the rolling function and then returns the given value to the program.
         /// </summary>
         /// <returns>The rolled value</returns>
         /// 
-        public int rollDice()
-        {
-            
-            _dieValue = rolling(rnd);
-            Console.WriteLine("Value of this die is: " +  dieValue);
-            
+        public int RollDice() {
+            _dieValue = Rolling(rnd);
+            Console.WriteLine("Value of this die is: " +  dieValue);            
             return _dieValue;
         }
         /// <summary>
@@ -43,11 +26,9 @@ namespace CMP1903_A1_2324
         /// </summary>
         /// <param name="rnd"></param>
         /// <returns>the rolled die value to the rollDice function</returns>
-        private int rolling(Random rnd)
-        {
-            _dieValue = rnd.Next(1, 7);
+        private int Rolling(Random rnd) { 
+            _dieValue = rnd.Next(1, 7); 
             return _dieValue;
         }
-
     }
 }
